@@ -1,5 +1,5 @@
 var floatAge, floatDays, floatMonths, intWeeks, intFortnights;
-floatAge = parseFloat(prompt("Enter age in years"));
+floatAge = prompt("Enter age in years");
 floatDays = parseFloat(floatAge*365.25);
 floatMonths = parseFloat(floatAge*12);
 intWeeks = parseInt(floatDays / 7);
