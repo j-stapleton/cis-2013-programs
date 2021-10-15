@@ -16,7 +16,7 @@ floatFinPts = parseFloat(prompt("Please enter final FINAL pts (0-35)"));
 
 floatTotalPts = parseFloat(floatHwPts + flaotMidPts + floatFinPts);
 
-intGradeOption = parseFloat(prompt("Please Choose Grade Option 1 or 2"));
+intGradeOption = parseInt(prompt("Please Choose Grade Option 1 or 2"));
 
 if (intGradeOption===1)
 {
@@ -29,9 +29,9 @@ if (intGradeOption===1)
         stringFinalGrade= "Fail";
     }
 }
-if (intGradeOption===2)
+else
 {   
-    if(floatTotalPoints>=90 && floatTotalPoints<=100)
+    if(floatTotalPoints>=90)
     {
         stringFinalGrade = "A";
     }
