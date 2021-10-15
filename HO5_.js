@@ -47,7 +47,7 @@ else
     {
         stringFinalGrade = "D";
     }
-    if (flaotTotalPts<60)
+    if (floatTotalPts<60)
     {
         stringFinalGrade = "F";
     }
