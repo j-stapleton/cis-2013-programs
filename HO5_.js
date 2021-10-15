@@ -16,7 +16,7 @@ floatFinPts = parseFloat(prompt("Please enter final FINAL pts (0-35)"));
 
 floatTotalPts = parseFloat(floatHwPts + flaotMidPts + floatFinPts);
 
-intGradeOption = prompt("Please Choose Grade Option 1 or 2");
+intGradeOption = parseFloat(prompt("Please Choose Grade Option 1 or 2"));
 
 if (intGradeOption===1)
 {
