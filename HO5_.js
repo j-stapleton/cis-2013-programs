@@ -20,7 +20,7 @@ intGradeOption = parseInt(prompt("Please Choose Grade Option 1 or 2"));
 
 if (intGradeOption===1)
 {
-    if (floatTotalPoints>=80)
+    if (floatTotalPts>=80)
     {
         stringFinalGrade= "Pass";
     }
@@ -35,19 +35,19 @@ else
     {
         stringFinalGrade = "A";
     }
-    if(floatTotalPts>= 80 && floatTotalPoints<90)
+    if(floatTotalPts>= 80 && floatTotalPts<90)
     {
         stringFinalGrade = "B";
     }
-    if(floatTotalPoints>=70 && floatTotalPoints<80)
+    if(floatTotalPts>=70 && floatTotalPts<80)
     {
         stringFinalGrade = "C";
     }
-    if(floatTotalPoints>=60 && floatTotalPoints<70)
+    if(floatTotalPts>=60 && floatTotalPts<70)
     {
         stringFinalGrade = "D";
     }
-    if (flaotTotalPoints<60)
+    if (flaotTotalPts<60)
     {
         stringFinalGrade = "F";
     }
