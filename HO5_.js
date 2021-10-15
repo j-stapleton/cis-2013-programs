@@ -14,7 +14,7 @@ floatMidPts = parseFloat(prompt("Please enter final MID pts (0-35)"));
 
 floatFinPts = parseFloat(prompt("Please enter final FINAL pts (0-35)"));
 
-floatTotalPts = parseFloat(floatHwPts + flaotMidPts + floatFinPts);
+floatTotalPts = parseFloat(floatHwPts + floatMidPts + floatFinPts);
 
 intGradeOption = parseInt(prompt("Please Choose Grade Option 1 or 2"));
 
