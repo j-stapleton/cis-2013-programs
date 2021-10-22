@@ -47,9 +47,10 @@ else
             stringOutput = stringMessage3;
         else
             stringOutput = stringMessage6;
-    
+    $("output").value = stringOutput
 
-window.onload = function () {
+window.onload = function () 
+{
     $("troubleshoot").onclick = fixPrinter;
 };
 
