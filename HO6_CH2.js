@@ -23,7 +23,7 @@ var fixPrinter = function()
     var boolPrinting = $("not_printing").selected;  //returns a value of true only when the not_printing html id is selected from the dropdown menu
     var boolRedLight = $("yes_redlight").selected;  //returns a value of true only when the yes_redlight html id is selected from the dropdown menu
     var boolRecognised = $("not_recognised").selected;  ////returns a value of true only when the not_recognized html id is selected from the dropdown menu
-}
+
     //enter your code here and don't forget to send the output to the DOM
 switch (true)
 {
@@ -53,8 +53,10 @@ switch (true)
         break;
 }
     
-$("output").value = stringOutput;
-window.onload = function () {
+    $("output").value = stringOutput;
+}
+    window.onload = function () 
+{
     $("troubleshoot").onclick = fixPrinter;
 };
 
