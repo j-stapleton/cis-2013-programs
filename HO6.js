@@ -47,7 +47,7 @@ else
             stringOutput = stringMessage3;
         else
             stringOutput = stringMessage6;
-    $("output").value = stringOutput
+    $("output").value = stringOutput;
 
 window.onload = function () 
 {
