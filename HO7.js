@@ -46,6 +46,11 @@ function circleCircum(floatRadius_par)
 
 
 window.onload = function () 
+
+
+var calcCircleArea = function()
+{
+	var
 {
     //lines 51-56 clear the DOM values..
 //    $("rect_width").value = "";
