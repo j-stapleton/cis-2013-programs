@@ -47,10 +47,91 @@ function circleCircum(floatRadius_par)
 
 window.onload = function () 
 
-
+//Circle Area
 var calcCircleArea = function()
 {
-	var
+	var floatRadius = parseFloat($("radius").value);
+
+	alert ("The Circle area is " + circleArea(floatRadius));	
+};
+
+function circleArea(floatRadius_par)
+{
+	var floatArea = parseFloat (Math.PI * Math.pow(floatRadius,2));
+	return floatArea.toFixed(2);
+}
+
+//Rectangle Area
+var calcRectArea = function()
+{
+	var floatRectWidth = parseFloat($("rect_width").value);
+    var floatRectHeight = parseFloat($("rect_height").value);
+	alert ("The rectangle area is " + rectArea(floatRectWidth, floatRectHeight));	
+};
+
+
+function rectArea(floatRectWidth, floatRectHeight)
+{
+    var floatRectArea = floatRectWidth * floatRectHeight;
+    return floatRectArea.toFixed(2);
+}
+
+//Rectangle Perimeter
+var calcRectPerim = function()
+{
+	var floatRectWidth = parseFloat($("rect_width").value);
+	var floatRectHeight = parseFloat($("rect_height").value);
+	alert ("The rectangle perimeter is" + rectPerim(floatRectWidth, floatRectHeight));
+};
+
+function rectPerim(floatRectWidth_par, floatRectHeight_par)
+{
+	var floatRectPerim = 2 * floatRectWidth + 2 * floatRectHeight;
+	return floatRectPerim.tofixed(2);
+}
+
+//Triangle Perimeter
+var calcTrianglePerim = function()
+{
+	var floatTriSide1 = parseFloat($("tri_side_1").value);
+	var floatTriSide2 = parseFloat($("tri_side_2").value);
+	var floatTriSide3 = parseFloat($("tri_side_3").value);
+	alert ("The triangle perimeter is" + trianglePerim(floatTriSide1, floatTriSide2, floatTriSide3);
+}
+
+function trianglePerim(floatTriSide1, floatTriSide2, floatTriSide3)
+{
+	var floatTrianglePerim = floatTriSide1 + floatTriSide2 + floatTriSide3;
+	return floatTrianglePerim.tofixed(2);
+}
+
+//Float S
+var calcFloatS = function()
+{
+	var floatTriSide2 = parseFloat($("tri_side_2").value);
+	var floatTriSide3 = parseFloat($("tri_side_3").value);
+}
+
+function floatS(floatTriSide2, floatTriSide3)
+{
+	var floatS = (floatTriSide2 + floatTriSide2 + floatTriSide3)/2;
+}
+//Triangle Area
+var calcTriangleArea = function()
+{
+	var floatS = parseFloat($("float_s").value);
+	var floatTriSide1 = parseFloat($("tri_side_1").value);
+	var floatTriSide2 = parseFloat($("tri_side_2").value);
+	var floatTriSide3 = parseFloat($("tri_side_3").value);
+	alert ("The triangle area is" + triangleArea(floatS, floatTriSide1, floatTriSide2, floatTriSide3);
+}
+
+function triangleArea(floatS, floatTriSide1, floatTriSide2, floatTriSide3)
+{
+	var triangleArea = Math.sqrt((floatS*(floatS-floatTriSide1)*(floatS-floatTriSide2)*(floatS-floatTriSide3)));
+	return floatTriangleArea.tofixed(2);
+}
+
 {
     //lines 51-56 clear the DOM values..
 //    $("rect_width").value = "";
