@@ -140,7 +140,7 @@ window.onload = function ()
     $("calc_circle_circum").onclick = calcCircleCircum; // runs the calcCircleCircum function when clicked
     $("calc_rect_area").onclick = calcRectArea;
     $("calc_rect_perim").onclick = calcRectPerim;
-    $("calc_triangle_area").onclick = calcTriangleArea;
-    $("calc_triangle_perim").onclick = calcTrianglePerim;
+    $("calc_tri_area").onclick = calcTriangleArea;
+    $("calc_tri_perim").onclick = calcTrianglePerim;
     $("calc_circle_area").onclick = calcCircleArea;
 };
