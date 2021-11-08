@@ -119,7 +119,7 @@ var calcTriangleArea = function()
 	alert ("The triangle area is" + triangleArea(floatTriSide1, floatTriSide2, floatTriSide3));
 }
 
-function triangleArea(floatS, floatTriSide1, floatTriSide2, floatTriSide3)
+function triangleArea(floatTriSide1, floatTriSide2, floatTriSide3)
 {
 	var floatTriangleArea = Math.sqrt((floatS*(floatS-floatTriSide1)*(floatS-floatTriSide2)*(floatS-floatTriSide3)));
 	return floatTriangleArea.toFixed(2);
