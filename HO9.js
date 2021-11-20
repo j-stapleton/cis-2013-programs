@@ -27,8 +27,6 @@ for (let i=1; i<=intCount; i++)
     j = k;
 }
     
-}
-    
 } 
 
 // Push solution back to Output through DOM
