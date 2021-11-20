@@ -10,7 +10,10 @@ var $ = function (id)
 var generate = function () 
 {
 	var intCount = parseInt($("total_fib").value);  //gets user input from the DOM
-	
+	while (isNaN(intCount) || intCount > 0 && intCount<100)
+	{
+		intCount = parseInt(prompt("Your number was invalid, try another."));
+	}	
 	//validate user input that intCount is a number and intCount is not less than 2 or intCount not greater than 100
 	
 	var i=0;  // sets the first number in the Fibonacci series to 0
