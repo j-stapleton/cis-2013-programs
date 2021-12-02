@@ -17,17 +17,17 @@ var passwordCheckOld = function ()
     {
         for (var a=0; a < arrayBadPasswords.length; a++)     //for loop to check the array
         {
-            if (stringPassword == arrayBadPasswords[a])             //
+            if (stringPassword == arrayBadPasswords[a])             //if statement that checks the password against the array
             {
-            	alert("Trash password");
+            	alert("Trash password");         //alert saying that the password is bad
                 return;
             }
         }
-        alert("Good Password")
+        alert("Good Password")                  //alert saying the password is good
     }
     else
     {
-        alert("Trash password");
+            	alert("Trash password");         //alert saying that the password is bad
     }
 };
 
