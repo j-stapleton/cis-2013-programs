@@ -15,18 +15,15 @@ var passwordCheckOld = function ()
  
     if (stringPassword.length > 8)  //if statement to check password lenght
     {
-        for (var a=0; a < array.length; a++)     //for loop to check the array
+        for (var a=0; a < arrayBadPasswords.length; a++)     //for loop to check the array
         {
-            if (stringPassword == array[a])             //
+            if (stringPassword == arrayBadPasswords[a])             //
             {
             	alert("Trash password");
                 return;
             }
-            else
-            {
-                alert("Good Password");
-            }
         }
+        alert("Good Password")
     }
     else
     {
