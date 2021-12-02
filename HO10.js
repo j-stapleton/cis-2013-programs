@@ -20,6 +20,7 @@ var passwordCheckOld = function ()
             if (stringPassword == array[a])
             {
             	alert("Trash password");
+                return;
             }
         }
         alert("Good Password");
