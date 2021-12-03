@@ -18,7 +18,7 @@ var generate = function ()
 		$("total_fib").value = "";
 	}
 else
-(	
+{	
 	var i=0;  // sets the first number in the Fibonacci series to 0
 	var j=1;  //sets the second number in the Fibonacci series to 1
 	var k;    //k is calculated by adding i+j and represents the next Fibonacci number
@@ -31,8 +31,9 @@ while(intCount>2)
 	k = i + j;
 	i = j;
 	j = k;
-	stringOutput = stringOutput + k + "";
+	stringOutput = stringOutput + k + " ";
 	intCount--;
+}
 }
 	$("output").value = stringOutput;
 } 
