@@ -13,7 +13,7 @@ var passwordCheckOld = function ()
     
     stringOutput = "";
  
-    if (stringPassword.length > 8)  //if statement to check password lenght
+    if (stringPassword.length < 8)  //if statement to check password lenght
     {
         stringOutput = "Your password should be at least 8 charecters long";
     }
