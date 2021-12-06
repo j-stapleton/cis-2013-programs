@@ -15,20 +15,21 @@ var passwordCheckOld = function ()
  
     if (stringPassword.length > 8)  //if statement to check password lenght
     {
+        stringOutput = "Your password should be at least 8 charecters long";
+    }
+    else
+        {
+            stringOutput = "Great Password";
+        }
         for (var a=0; a < arrayBadPasswords.length; a++)     //for loop to check the array
         {
             if (stringPassword == arrayBadPasswords[a])             //if statement that checks the password against the array
             {
-            	alert("Trash password");         //alert saying that the password is bad
+            	stringOutput = "Bad password, try again";         //alert saying that the password is bad
                 return;
             }
         }
-        alert("Good Password")                  //alert saying the password is good
-    }
-    else
-    {
-            	alert("Trash password");         //alert saying that the password is bad
-    }
+    $("output").value=stringOutput;
 };
 
 window.onload = function () 
