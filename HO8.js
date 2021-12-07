@@ -60,22 +60,20 @@ while (intGuess(isNaN) || intGuess > intMin || intMax < intGuess)
  */
 while(intGuess != intRandom)
 {
-    alert("Congratulations!!! You guessed the correct number (" + intRandom +")\n" +
-		" and it only took you " + intCount + " attempts!");
-}
-else
-{
     if (intGuess > intRandom)
     {
     alert("Your guess is to high");
     }
     else
     {
-        if (intGuess < intRandom)
-        {
-            alert("Your guess is to low.");
-        }
+        alert("Your guess is to low.");
     }
+	intCount++;
+	intGuess = parseInt(prompt("What is your guess"))
+	while (isNaN(intGuess) || intGuess < intMin || intGuess> intMax)
+	{
+	alert("Try again");
+	}
 }
  
  
