@@ -44,10 +44,12 @@ if (intGradeOption===2)
         stringFinalGrade = "F";
     }
 }
-
-
-
-
-
-
 $("final_grade").value = stringFinalGrade;
+window.onload = function () 
+{
+    $("final_grade").value = ""; //blanks the final grade text box upon page load
+    $("calculate").onclick = calculate_click; //activates main method when the button is clicked 
+    $("hw_pts").focus(); //puts the cursor on the first DOM text input box
+    alert("Overall sum of Homework, Midterm, and Final points must equal 100"); 
+};
+© 2022 GitHub, Inc.
