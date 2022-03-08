@@ -1,50 +1,62 @@
-var intGradeOption, floatTotalPts, floatHwPts, floatMidPts, floatFinPts, stringFinalGrade;
-
-floatHwPts = parseFloat(floatHwPts = $("hw_pts").value);
-
-floatMidPts = parseFloat(floatMidPts = $("mid_pts").value);
-
-floatFinPts = parseFloat(floatFinPts = $("fin_pts").value);
-
-floatTotalPts = parseFloat(floatHwPts + flaotMidPts + floatFinPts);
-
-intGradeOption = parseInt(intGradeOption = $("grade_option").value);
-
-if (intGradeOption===1)
+var $ = function (id) 
 {
-    if (floatTotalPts>=80)
+    return document.getElementById(id);
+};
+
+var calculate_click = function () 
+{
+    var floatHwPts, floatMidPts, floatFinPts, floatTotalPts, intGradeOption, stringFinalGrade;
+
+    floatHwPts = parseFloat($("hw_pts").value);
+    
+    floatMidPts = parseFloat($("mid_pts").value);
+    
+    floatFinPts = parseFloat($("fin_pts").value);
+    
+    floatTotalPts = parseFloat(floatHwPts + floatMidPts + floatFinPts);
+    
+    intGradeOption = parseInt($("grade_option").value);
+
+    
+    if(intGradeOption===1)
     {
-        stringFinalGrade= "Pass";
+        if (floatTotalPts >= 80)
+        {
+        stringFinalGrade = "Pass";
+        }   
+       else
+     {
+        stringFinalGrade = "Fail";
+     }
     }
-    else
+
+    if(intGradeOption===2)
     {
-        stringFinalGrade= "Fail";
+        if (floatTotalPts >= 90)
+        {
+           stringFinalGrade = "A"; 
+        }
+          else if (floatTotalPts >= 80)
+          {
+              stringFinalGrade = "B";
+          }
+               else if (floatTotalPts >= 70)
+                {
+                   stringFinalGrade = "C";   
+                }
+                  else if (floatTotalPts >= 60)
+                      {
+                        stringFinalGrade = "D";  
+                      }
+                        else if (floatTotalPts <= 59)
+                            {
+                              stringFinalGrade = "F"; 
+                             }
+    
     }
-}
-if (intGradeOption===2)
-{   
-    if(floatTotalPts>=90)
-    {
-        stringFinalGrade = "A";
-    }
-    if(floatTotalPts>= 80 && floatTotalPts<90)
-    {
-        stringFinalGrade = "B";
-    }
-    if(floatTotalPts>=70 && floatTotalPts<80)
-    {
-        stringFinalGrade = "C";
-    }
-    if(floatTotalPts>=60 && floatTotalPts<70)
-    {
-        stringFinalGrade = "D";
-    }
-    if (floatTotalPts<60)
-    {
-        stringFinalGrade = "F";
-    }
-}
-$("final_grade").value = stringFinalGrade;
+    $("final_grade").value = stringFinalGrade;
+};
+
 window.onload = function () 
 {
     $("final_grade").value = ""; //blanks the final grade text box upon page load
@@ -52,4 +64,3 @@ window.onload = function ()
     $("hw_pts").focus(); //puts the cursor on the first DOM text input box
     alert("Overall sum of Homework, Midterm, and Final points must equal 100"); 
 };
-© 2022 GitHub, Inc.
