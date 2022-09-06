@@ -16,6 +16,10 @@ main{
     border: 0.5px groove rgb(120,20,200);
     border-radius: 20px;
 }
+fieldset{
+    margin-bottom: 20px;
+}
+
 legend {
     text-decoration: underline;
 }
