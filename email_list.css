@@ -20,7 +20,7 @@ legend {
     text-decoration: underline;
 }
 h1{
-    color: gray;
+    color: blue;
     margin-bottom: .5em;
 }
 label{
@@ -73,7 +73,7 @@ span{
     background: rgb(227; 213; 28);
 }
 footer{
-    color: green;
+    color: yellow;
 }
 
 
