@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <title>Sales Tax Calculator</title>
+                <link rel="stylesheet" href="sales_tax.css">
+                <script src="sales_tax.js"></script>
+        </head>
+        <body>
+                    <main>
+                            <h1>Enter the values below and click "Calculate"</h1>
+                            <form id="calculateTax" name="calculateTax" onsubmit= "return calculate_click();" method = "POST">
+                                <label for="subtotal">Subtotal:</label>
+                                <input type="number" id="subtotal" name="subtotal" required>
+                                <br>
+                                <label for="tax_rate">Tax Rate:</label>
+                                <input type="number" id="tax_rate" name="tax_rate" required>       
+                                <br>
+                                <label for="shipping_charges">Shipping Charges:</label>
+                                <input type="number" id="shipping_charges" name="shipping charges">
+                                <br>
+                                <label for="sales_tax">Sales Tax:</label>
+                                <input type="number" id="sales_tax" name="sales_tax" disabled>
+                                <br>
+                                <label for="total">Total:</label>
+                                <input type="number" id="total" name="total" disabled>
+                                <br>
+                                <label>&nbsp;</label>
+                                <input type="submit" id="calculate" value="Calculate Sales Tax">
+                                
+                            </form>
+                    </main>
+        </body>
+</html>
